@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffebda;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #834f23;
+    color: black;
+    font-family: serif;
+}
+
+header h1 {
+    font-size: 40px;
+    font-family: serif;
+}
+
+header p {
+    font-size: 30px;
+}
+
+p {
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+}
+
+main {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+#sujestoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.presentes {
+    flex: 0 0 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #b88b5c;
+    text-align: center;
+}
+
+.presentes img.presente {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.presentes h2, .presentes p {
+    color: black;
+}
+
+button {
+    color: black;
+    background-color: #b88b5c;
+    border-radius: 30px;
+    width: 100px;
+}
+
+button:hover {
+    color: white;
+}
+
+/* Media query para dispositivos com largura de até 768 pixels (como celulares) */
+@media screen and (max-width: 768px) {
+    main, #sujestoes {
+        flex-direction: column; /* Alinhar os contêineres um abaixo do outro */
+        align-items: center; /* Centralizar os contêineres */
+    }
+
+    .presentes {
+        flex: 0 0 80%; /* Definir a largura dos contêineres para ocupar 80% da largura da tela */
+        max-width: 80%;
+    }
+}
